@@ -47,7 +47,7 @@ async def die_handler(message: Message):
     await bot.state_dispenser.set(message.peer_id, SuperStates.AWKWARD_STATE)
     return "ok"
 
-bot.run_forever()
+bot.run()
 ```
 
 !!! info "Примечание"

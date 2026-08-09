@@ -17,7 +17,7 @@ bot = Bot("token")
 for custom_labeler in labelers:
     bot.labeler.load(custom_labeler)
 
-bot.run_forever()
+bot.run()
 ```
 
 ### routes/\_\_init\_\_.py

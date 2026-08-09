@@ -94,7 +94,7 @@ async def hi_handler(message: Message):
     users_info = await bot.api.users.get(message.from_id)
     await message.answer("Привет, {}".format(users_info[0].first_name))
 
-bot.run_forever()
+bot.run()
 ```
 
 Разберем новый код построчно:

@@ -27,7 +27,7 @@ async def greeting(message: Message):
     await message.answer(f"Привет, {m.text.capitalize()}! Будем знакомы.")
 
 
-bot.run_forever()
+bot.run()
 ```
 
 Из `.wait` возвращается tuple с двумя элементами:
