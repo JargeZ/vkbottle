@@ -1,3 +1,5 @@
+# Depreceted
+
 # Loop Wrapper
 
 `LoopWrapper` нужен чтобы контролировать ивент луп для работы с `asyncio` и хранить основные таски, `startup` и `shutdown`, которые будут исполнены только при запуске ивент лупа через `run_forever`

@@ -255,7 +255,7 @@ async def who_admins(message: Message):
     await message.answer(f"Администраторы этого бота: {' '.join(admins)}")
 
 
-bot.run_forever()
+bot.run()
 ```
 
 ## Pydantic.error_wrappers.ValidationError

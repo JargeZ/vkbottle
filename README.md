@@ -27,7 +27,7 @@ bot = Bot("GroupToken")
 async def handler(_) -> str:
     return "Hello, World!"
 
-bot.run_forever()
+bot.run()
 ```
 
 [Смотреть больше примеров!](https://github.com/vkbottle/vkbottle/tree/master/examples)

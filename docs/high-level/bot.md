@@ -20,7 +20,7 @@
 
 Асинхронный запуск longpoll
 
-### `bot.run_forever()`
+### `bot.run()`
 
 Синхронный запуск longpoll. Добавляет `run_polling` в таски `bot.loop_wrapper` и вызывает `bot.loop_wrapper.run()`
 
