@@ -23,9 +23,11 @@ from vkbottle.bot import Bot
 
 bot = Bot("GroupToken")
 
+
 @bot.on.message()
 async def handler(_) -> str:
     return "Hello, World!"
+
 
 bot.run()
 ```

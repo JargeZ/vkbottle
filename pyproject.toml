@@ -205,6 +205,7 @@ lint.ignore = [
   "UP035",   # deprecated-import
   "UP045",   # Use `X | None` for type annotations,
   "N804",    # Checks for class methods that use a name other than `cls` for their first argument.
+  "PLR0917", # too-many-positional-arguments
 ]
 
 [tool.ruff.lint.per-file-ignores]

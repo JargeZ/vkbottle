@@ -35,6 +35,7 @@ from vkbottle.bot import BotLabeler, Message
 
 bl = BotLabeler()
 
+
 @bl.message(text=["привет", "хай", "здравствуй"])
 async def greeting(message: Message):
     await message.answer("Привет, друг")
@@ -46,6 +47,7 @@ async def greeting(message: Message):
 from vkbottle.bot import BotLabeler, Message
 
 bl = BotLabeler()
+
 
 @bl.message(text=["пока", "до свидания"])
 async def greeting(message: Message):
