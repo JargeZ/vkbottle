@@ -1,4 +1,4 @@
 from .abc import ABCEventDeduplicator
-from .memory_event_deduplicator import MemoryEventDeduplicator
+from .memory import MemoryEventDeduplicator
 
 __all__ = ("ABCEventDeduplicator", "MemoryEventDeduplicator")

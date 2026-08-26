@@ -43,12 +43,10 @@ from .exception_factory import (
 )
 from .framework import (
     ABCBlueprint,
-    ABCEventDeduplicator,
     ABCFramework,
     BaseFramework,
     Bot,
     BotBlueprint,
-    MemoryEventDeduplicator,
     User,
     UserBlueprint,
     run_multibot,
@@ -58,6 +56,7 @@ from .polling import ABCPolling, BasePolling, BotPolling, UserPolling
 from .tools import (
     EMPTY_KEYBOARD,
     ABCAction,
+    ABCEventDeduplicator,
     ABCStorage,
     ABCValidator,
     AudioUploader,
@@ -81,6 +80,7 @@ from .tools import (
     KeyboardButtonColor,
     Location,
     LoopWrapper,
+    MemoryEventDeduplicator,
     OpenAppEvent,
     OpenLink,
     OpenLinkEvent,

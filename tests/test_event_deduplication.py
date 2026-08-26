@@ -2,7 +2,7 @@ import asyncio
 
 import pytest
 
-from vkbottle import ABCEventDeduplicator, Bot, MemoryEventDeduplicator
+from vkbottle import ABCEventDeduplicator, Bot
 
 EVENT = {
     "type": "message_new",
@@ -13,7 +13,7 @@ EVENT = {
 
 @pytest.mark.asyncio
 async def test_dual_mode_claims_same_event_once_from_both_transports():
-    bot = Bot(token="token", dual_mode=True, event_deduplicator=MemoryEventDeduplicator())
+    bot = Bot(token="token", dual_mode=True)
     processed: list[dict] = []
 
     async def route(event, api):
@@ -33,7 +33,7 @@ async def test_dual_mode_claims_same_event_once_from_both_transports():
 
 @pytest.mark.asyncio
 async def test_dual_mode_allows_distinct_events():
-    bot = Bot(token="token", dual_mode=True, event_deduplicator=MemoryEventDeduplicator())
+    bot = Bot(token="token", dual_mode=True)
     processed: list[dict] = []
 
     async def route(event, api):
@@ -67,7 +67,7 @@ async def test_uses_custom_event_deduplicator():
         async def claim(self, event: dict) -> bool:
             return False
 
-    bot = Bot(token="token", event_deduplicator=EventDeduplicator())
+    bot = Bot(token="token", dual_mode=True, event_deduplicator=EventDeduplicator())
     processed: list[dict] = []
 
     async def route(event, api):

@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import Any, Mapping
 
 
 class ABCEventDeduplicator(ABC):
     @abstractmethod
-    async def claim(self, event: dict[str, Any]) -> bool:
+    async def claim(self, event: Mapping[str, Any]) -> bool:
         pass
 
 
